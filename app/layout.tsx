@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Morgan | Lead Automation & Quality Engineer",
+  title: "Rao Muhammad Ali | Lead Automation & Quality Engineer",
   description:
     "Senior SDET specializing in high-scale E2E frameworks, CI/CD reliability, and performance gatekeeping. Expert in Playwright, Cypress, k6, and cloud-native test infrastructure.",
   keywords: [
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "JMeter",
     "Quality Engineering",
   ],
-  authors: [{ name: "Alex Morgan" }],
+  authors: [{ name: "Rao Muhammad Ali" }],
   openGraph: {
-    title: "Alex Morgan | Lead Automation & Quality Engineer",
+    title: "Rao Muhammad Ali | Lead Automation & Quality Engineer",
     description:
       "Senior SDET specializing in high-scale E2E frameworks, CI/CD reliability, and performance gatekeeping.",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Morgan | Lead Automation & Quality Engineer",
+    title: "Rao Muhammad Ali | Lead Automation & Quality Engineer",
     description:
       "Senior SDET specializing in high-scale E2E frameworks, CI/CD reliability, and performance gatekeeping.",
   },

@@ -43,7 +43,7 @@ export default function HeroSection() {
 
           {/* Main headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
-            <span className="block text-slate-100">Alex Morgan</span>
+            <span className="block text-slate-100">Rao Muhammad Ali</span>
             <span className="block mt-2">
               <span className="text-[#10b981] glow-green-text">Lead Automation</span>
               <span className="text-slate-400"> &amp; </span>
