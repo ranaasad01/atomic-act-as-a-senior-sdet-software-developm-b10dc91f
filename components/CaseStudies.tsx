@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowRight, Shield, Gauge, Terminal, Check } from 'lucide-react';
+
+import { ArrowRight, Shield, Gauge, Terminal, Check, Zap } from 'lucide-react';
 
 interface CaseStudy {
   id: string;
@@ -42,24 +43,24 @@ const caseStudies: CaseStudy[] = [
     bgColor: "bg-[#10b981]/5",
   },
   {
-    id: "shift-left-security",
-    metric: "100%",
-    metricLabel: "Security Coverage in CI",
-    title: "Shift-Left Security in GitLab CI",
+    id: "api-performance-testing",
+    metric: "3x",
+    metricLabel: "Throughput Improvement",
+    title: "API & Load Testing Pipeline",
     description:
-      "Embedded SAST, DAST, dependency scanning, and container vulnerability checks directly into the GitLab CI pipeline as mandatory quality gates.",
+      "Designed a comprehensive API testing and performance validation suite covering functional correctness, contract testing, and high-concurrency load scenarios for a microservices platform.",
     challenge:
-      "Security reviews were a post-release bottleneck. Critical CVEs were discovered in production, causing emergency patches and SLA breaches.",
+      "APIs were released without load validation. Production outages occurred under peak traffic, and integration failures between services were only caught post-deployment.",
     solution:
-      "Integrated OWASP ZAP for DAST, Trivy for container scanning, Semgrep for SAST, and Snyk for dependency auditing — all as blocking pipeline stages with Slack alerting.",
+      "Built a layered testing strategy using Postman/Newman for API functional testing, Pact for consumer-driven contract testing, and k6 for scripted load and spike tests — all integrated as CI pipeline stages.",
     outcomes: [
-      "Critical CVEs caught pre-merge: 23 in first quarter",
-      "Mean time to remediation: 14 days → 2 days",
-      "Achieved SOC 2 Type II compliance readiness",
-      "Zero security incidents post-implementation",
+      "API contract violations caught pre-merge: 41 in first quarter",
+      "Peak load capacity validated: 10k → 30k req/min",
+      "P99 response time reduced from 4.2s → 890ms",
+      "Zero API-related production incidents post-implementation",
     ],
-    tags: ["GitLab CI", "OWASP ZAP", "Trivy", "Semgrep", "DevSecOps", "SAST/DAST"],
-    icon: Shield,
+    tags: ["k6", "Postman", "Newman", "Pact", "Load Testing", "Contract Testing"],
+    icon: Zap,
     accentColor: "text-[#f59e0b]",
     borderColor: "border-[#f59e0b]/20",
     bgColor: "bg-[#f59e0b]/5",
