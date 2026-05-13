@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Check, Circle, Loader, AlertCircle } from 'lucide-react';
 
 type StepStatus = "waiting" | "running" | "passed" | "failed";
@@ -98,7 +98,7 @@ export default function PipelineStepper() {
             Automated Quality Gates
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            Every commit triggers a multi-stage validation pipeline. Zero manual intervention. Zero surprises in production.
+            Every commit automatically runs through a series of checks — from building the code to running tests and measuring performance — before anything reaches production.
           </p>
         </div>
 
@@ -196,6 +196,14 @@ export default function PipelineStepper() {
               </div>
             ))}
           </div>
+
+          {/* Legend */}
+          <div className="mt-6 pt-4 border-t border-[#334155] flex flex-wrap gap-4 text-xs font-mono text-slate-500">
+            <span className="flex items-center gap-1.5"><Circle className="w-3 h-3 text-slate-600" /> Waiting to run</span>
+            <span className="flex items-center gap-1.5"><Loader className="w-3 h-3 text-[#f59e0b]" /> Currently running</span>
+            <span className="flex items-center gap-1.5"><Check className="w-3 h-3 text-[#10b981]" /> Passed successfully</span>
+            <span className="flex items-center gap-1.5"><AlertCircle className="w-3 h-3 text-red-400" /> Failed</span>
+          </div>
         </div>
 
         {/* Run button */}
@@ -223,7 +231,7 @@ export default function PipelineStepper() {
             )}
           </button>
           <p className="mt-3 font-mono text-xs text-slate-600">
-            Click to simulate a full CI/CD pipeline execution
+            Press the button to watch each stage run in sequence, just like a real deployment
           </p>
         </div>
       </div>

@@ -12,29 +12,41 @@ export default function Home() {
     <main className="min-h-screen bg-[#0f0f1a] text-slate-200">
       <NavBar />
 
+      {/* Hero — first impression, headline & call-to-action */}
       <HeroSection />
 
-      {/* Section divider */}
       <div className="section-divider" />
 
-      <PipelineStepper />
+      {/* How it works — step-by-step pipeline overview */}
+      <section aria-labelledby="pipeline-heading">
+        <h2 id="pipeline-heading" className="sr-only">How It Works</h2>
+        <PipelineStepper />
+      </section>
 
-      {/* Section divider */}
       <div className="section-divider" />
 
-      <FrameworksGrid />
+      {/* Supported frameworks & integrations */}
+      <section aria-labelledby="frameworks-heading">
+        <h2 id="frameworks-heading" className="sr-only">Supported Frameworks</h2>
+        <FrameworksGrid />
+      </section>
 
-      {/* Section divider */}
       <div className="section-divider" />
 
-      <LiveTerminal />
+      {/* Live demo — see it in action right in the browser */}
+      <section aria-labelledby="terminal-heading">
+        <h2 id="terminal-heading" className="sr-only">Live Terminal Demo</h2>
+        <LiveTerminal />
+      </section>
 
-      {/* Section divider */}
       <div className="section-divider" />
 
-      <CaseStudies />
+      {/* Real-world case studies & success stories */}
+      <section aria-labelledby="cases-heading">
+        <h2 id="cases-heading" className="sr-only">Case Studies</h2>
+        <CaseStudies />
+      </section>
 
-      {/* Section divider */}
       <div className="section-divider" />
 
       <Footer />

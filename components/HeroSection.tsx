@@ -37,7 +37,7 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#10b981]/30 bg-[#10b981]/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
             <span className="font-mono text-xs text-[#10b981] tracking-widest uppercase">
-              Available for Senior SDET Roles
+              Open to Senior SDET Opportunities
             </span>
           </div>
 
@@ -45,7 +45,7 @@ export default function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
             <span className="block text-slate-100">Rao Muhammad Ali</span>
             <span className="block mt-2">
-              <span className="text-[#10b981] glow-green-text">Lead Automation</span>
+              <span className="text-[#10b981] glow-green-text">Test Automation</span>
               <span className="text-slate-400"> &amp; </span>
               <span className="text-slate-100">Quality Engineer</span>
             </span>
@@ -53,10 +53,10 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 mb-4 leading-relaxed">
-            Specializing in high-scale E2E frameworks, CI/CD reliability, and performance gatekeeping.
+            I build automated testing systems that catch bugs early, keep deployments stable, and make sure software ships with confidence.
           </p>
           <p className="max-w-xl mx-auto font-mono text-sm text-slate-500 mb-10">
-            <span className="text-[#10b981]">$</span> Building systems that catch bugs before they catch you.
+            <span className="text-[#10b981]">$</span> Helping teams ship faster — without breaking things.
           </p>
 
           {/* Badges */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
               href="#projects"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#10b981] text-[#0f0f1a] font-mono font-bold rounded hover:bg-[#34d399] transition-all duration-200 glow-green group"
             >
-              <span>View Case Studies</span>
+              <span>View My Work</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
@@ -86,7 +86,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-8 py-4 border border-[#334155] text-slate-300 font-mono font-semibold rounded hover:border-[#10b981]/50 hover:text-[#10b981] transition-all duration-200"
             >
               <Terminal className="w-4 h-4" />
-              <span>See the Pipeline</span>
+              <span>How I Build Pipelines</span>
             </a>
           </div>
 
